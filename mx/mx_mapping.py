@@ -14,7 +14,7 @@ from .layernorm import LayerNorm, layer_norm
 from .linear import Linear, linear
 from .matmul import MatMulFunction, matmul
 from .rnn import LSTM
-from .softmax import Softmax, softmax
+# from .softmax import Softmax, softmax
 from .simd_ops import simd_add, simd_sub, simd_mul, simd_div, simd_exp, simd_log, simd_reduce_sum, simd_reduce_mean, \
     simd_norm, simd_square
 
@@ -84,7 +84,7 @@ MODULE_MAPPING = {
     "ReLU6": ReLU6,
     "SiLU": SiLU,
     "Sigmoid": Sigmoid,
-    "Softmax": Softmax,
+    # "Softmax": Softmax,
     "Tanh": Tanh,
 }
 
@@ -103,7 +103,7 @@ FUNCTION_MAPPING = {
     "relu6": relu6,
     "sigmoid": sigmoid,
     "silu": silu,
-    "softmax": softmax, # Causes NaNs?
+    # "softmax": softmax, # Causes NaNs?
     "tanh": tanh,
     "add": simd_add,
     "sub": simd_sub,
